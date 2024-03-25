@@ -7,7 +7,3 @@ This is a Chrome Extension that visualises the real price of items on Klaravik.d
 ## Built using Chrome Extension (MV3) Boilerplate
 
 This extension leans on [chrome-extension-boilerplate-react](https://github.com/lxieyang/chrome-extension-boilerplate-react) as a foundation.
-
-[![npm](https://img.shields.io/npm/v/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)
-[![npm-download](https://img.shields.io/npm/dw/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)
-[![npm](https://img.shields.io/npm/dm/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)
