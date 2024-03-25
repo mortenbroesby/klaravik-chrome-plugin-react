@@ -23,24 +23,26 @@ for (var entryName in config.entry) {
 
 delete config.chromeExtensionBoilerplate;
 
+config.plugins = [new webpack.HotModuleReplacementPlugin({})].concat(
+  config.plugins || []
+);
+
 var compiler = webpack(config);
 
 var server = new WebpackDevServer(
   {
-    https: false,
-    hot: true,
+    https: true,
+    hot: false,
     liveReload: false,
-    client: {
-      webSocketTransport: 'sockjs',
-    },
-    webSocketServer: 'sockjs',
+    client: false,
+    webSocketServer: 'ws',
     host: 'localhost',
     port: env.PORT,
     static: {
       directory: path.join(__dirname, '../build'),
     },
     devMiddleware: {
-      publicPath: `http://localhost:${env.PORT}/`,
+      publicPath: `http://wss:${env.PORT}/`,
       writeToDisk: true,
     },
     headers: {
